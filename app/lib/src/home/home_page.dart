@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../shared/widgets/user_image_button.dart';
+import 'widgets/custom_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const CustomDrawer(),
       appBar: AppBar(
         title: const Text('Listinha'),
         actions: const [
